@@ -9,6 +9,45 @@ btn.addEventListener("click", () => {
         idioma = "en";
         btn.innerHTML = "🇪🇸 Español";
 
+        // BENEFICIOS
+        tituloBeneficios.textContent = "Benefits";
+
+        beneficio1.textContent = "✔ Detects poor posture in real time.";
+
+        beneficio2.textContent = "✔ Provides ergonomic recommendations.";
+
+        beneficio3.textContent = "✔ Stores evaluation history.";
+
+        beneficio4.textContent = "✔ Low-cost hardware.";
+
+        beneficio5.textContent = "✔ Easy implementation.";
+
+
+        // APLICACIONES
+
+        tituloAplicaciones.textContent = "Applications";
+
+        textoAplicaciones.innerHTML = `
+• Offices<br>
+• Students<br>
+• Programmers<br>
+• Remote work<br>
+• Gamers<br>
+• Companies
+`;
+
+
+        // FOOTER
+
+        footerSubtitulo.textContent =
+            "Intelligent Posture Assessment Platform";
+
+        footerEquipo.textContent =
+            "Team: Daniel Jiménez, Sergio Bustos, Camilo Díaz, Martin Rojas, Benjamin Delgado";
+
+        footerFeria.textContent =
+            "TP Fair • 2026";
+
         // NAVBAR
         document.getElementById("navProyecto").textContent = "Project";
 
@@ -83,6 +122,45 @@ btn.addEventListener("click", () => {
 
         idioma = "es";
         btn.innerHTML = "🇺🇸 English";
+
+        // BENEFICIOS
+        tituloBeneficios.textContent = "Beneficios";
+
+        beneficio1.textContent = "✔ Detecta malas posturas en tiempo real.";
+
+        beneficio2.textContent = "✔ Recomienda mejoras ergonómicas.";
+
+        beneficio3.textContent = "✔ Guarda el historial de evaluaciones.";
+
+        beneficio4.textContent = "✔ Hardware de bajo costo.";
+
+        beneficio5.textContent = "✔ Fácil implementación.";
+
+
+        // APLICACIONES
+
+        tituloAplicaciones.textContent = "Aplicaciones";
+
+        textoAplicaciones.innerHTML = `
+• Oficinas<br>
+• Estudiantes<br>
+• Programadores<br>
+• Teletrabajo<br>
+• Gamers<br>
+• Empresas
+`;
+
+
+        // FOOTER
+
+        footerSubtitulo.textContent =
+            "Plataforma Inteligente de Evaluación Postural";
+
+        footerEquipo.textContent =
+            "Equipo: Daniel Jiménez, Sergio Bustos, Camilo Díaz, Martin Rojas, Benjamin Delgado";
+
+        footerFeria.textContent =
+            "Feria TP • 2026";
         // NAVBAR
         document.getElementById("navProyecto").textContent = "Proyecto";
 
