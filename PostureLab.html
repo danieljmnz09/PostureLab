@@ -124,7 +124,9 @@
 
         <div class="container">
 
-            <h2 class="section-title text-center">Problema</h2>
+            <h2 id="tituloProblema" class="section-title text-center">
+                Problema
+            </h2>
 
             <div class="row g-4">
 
@@ -134,9 +136,13 @@
 
                         <i class="bi bi-clock-history icon"></i>
 
-                        <h4 class="mt-3">Largas jornadas</h4>
+                        <h4 data-lang="problema1Titulo">
+                            Largas jornadas
+                        </h4>
 
-                        <p>Muchas personas permanecen más de 8 horas frente al computador.</p>
+                        <p data-lang="problema1Texto">
+                            Muchas personas permanecen más de 8 horas frente al computador.
+                        </p>
 
                     </div>
 
@@ -148,9 +154,13 @@
 
                         <i class="bi bi-exclamation-triangle icon"></i>
 
-                        <h4 class="mt-3">Mala postura</h4>
+                        <h4 data-lang="problema2Titulo">
+                            Malos hábitos
+                        </h4>
 
-                        <p>Las malas posiciones generan dolores de cuello, espalda y hombros.</p>
+                        <p data-lang="problema2Texto">
+                            Una postura incorrecta puede provocar dolores de espalda, cuello y hombros.
+                        </p>
 
                     </div>
 
@@ -162,9 +172,13 @@
 
                         <i class="bi bi-heart-pulse icon"></i>
 
-                        <h4 class="mt-3">Prevención</h4>
+                        <h4 data-lang="problema3Titulo">
+                            Prevención
+                        </h4>
 
-                        <p>El proyecto busca fomentar hábitos saludables antes de que aparezcan molestias.</p>
+                        <p data-lang="problema3Texto">
+                            Detectar malas posturas a tiempo ayuda a prevenir lesiones musculoesqueléticas.
+                        </p>
 
                     </div>
 
@@ -180,9 +194,11 @@
 
         <div class="container">
 
-            <h2 class="section-title text-center">¿Cómo funciona?</h2>
+            <h2 id="tituloFuncionamiento" class="section-title text-center">
+                ¿Cómo funciona?
+            </h2>
 
-            <p class="text-center text-muted mb-5">
+            <p id="funcionDescripcion" class="text-center">
                 El proceso de PostureLab se divide en cinco etapas principales.
             </p>
 
@@ -196,12 +212,11 @@
 
                         <div class="card-body text-center d-flex flex-column">
 
-                            <h5 class="titulo-card">1. Captura</h5>
+                            <h5 id="funcion1Titulo">1. Captura</h5>
 
-                            <p class="mt-2">
+                            <p id="funcion1Texto">
                                 La cámara registra la postura del usuario en tiempo real.
                             </p>
-
                         </div>
 
                     </div>
@@ -216,9 +231,9 @@
 
                         <div class="card-body text-center d-flex flex-column">
 
-                            <h5 class="titulo-card">2. Detección</h5>
+                            <h5 id="funcion2Titulo">2. Detección</h5>
 
-                            <p class="mt-2">
+                            <p id="funcion2Texto">
                                 MediaPipe identifica hombros, cuello y espalda mediante visión artificial.
                             </p>
 
@@ -235,9 +250,8 @@
 
                         <div class="card-body text-center d-flex flex-column">
 
-                            <h5 class="titulo-card">3. Análisis</h5>
-
-                            <p class="mt-2">
+                            <h5 id="funcion3Titulo">3. Análisis</h5>
+                            <p id="funcion3Texto">
                                 Se calculan los ángulos corporales para evaluar la postura.
                             </p>
 
@@ -254,10 +268,10 @@
 
                         <div class="card-body text-center d-flex flex-column">
 
-                            <h5 class="titulo-card">4. Evaluación</h5>
+                            <h5 id="funcion4Titulo">4. Evaluación</h5>
 
-                            <p class="mt-2">
-                                El sistema clasifica la postura mediante un indicador de colores.
+                            <p id="funcion4Texto">
+                                El sistema clasifica la postura utilizando un semáforo ergonómico.
                             </p>
 
                         </div>
@@ -274,10 +288,10 @@
 
                         <div class="card-body text-center d-flex flex-column">
 
-                            <h5 class="titulo-card">5. Historial</h5>
+                            <h5 id="funcion5Titulo">5. Historial</h5>
 
-                            <p class="mt-2">
-                                Los resultados se almacenan para que el usuario pueda seguir su evolución.
+                            <p id="funcion5Texto">
+                                Se almacenan las evaluaciones para observar la evolución del usuario.
                             </p>
 
                         </div>
@@ -297,7 +311,9 @@
 
         <div class="container">
 
-            <h2 class="section-title text-center">Tecnologías Utilizadas</h2>
+            <h2 id="tituloTecnologias" class="section-title text-center">
+                Tecnologías Utilizadas
+            </h2>
 
             <div class="row g-3 text-center">
 
@@ -339,7 +355,9 @@
 
         <div class="container">
 
-            <h2 class="section-title text-center">Beneficios</h2>
+            <h2 id="tituloBeneficios" class="section-title text-center">
+                Beneficios
+            </h2>
 
             <div class="row g-4">
 
@@ -411,59 +429,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-
-        let ingles = false;
-
-        const btn = document.getElementById("btnIdioma");
-
-        btn.addEventListener("click", function () {
-
-            ingles = !ingles;
-
-            if (ingles) {
-
-                btn.innerHTML = "🇪🇸 ES";
-
-                document.getElementById("heroTitulo").innerHTML = "PostureLab";
-
-                document.getElementById("heroTexto").innerHTML =
-                    "An intelligent platform that uses Artificial Intelligence to evaluate posture in real time and provide ergonomic recommendations.";
-
-                document.getElementById("heroBoton").innerHTML =
-                    "Learn More";
-
-                document.getElementById("tituloProyecto").innerHTML =
-                    "What is PostureLab?";
-
-                document.getElementById("textoProyecto").innerHTML =
-                    "PostureLab is an intelligent platform that analyzes a person's posture using computer vision and Artificial Intelligence. The system detects poor posture, provides ergonomic recommendations and stores the user's evaluation history.";
-
-            }
-
-            else {
-
-                btn.innerHTML = "🇺🇸 EN";
-
-                document.getElementById("heroTitulo").innerHTML = "PostureLab";
-
-                document.getElementById("heroTexto").innerHTML =
-                    "Plataforma inteligente que utiliza Inteligencia Artificial para evaluar la postura de una persona en tiempo real y entregar recomendaciones ergonómicas.";
-
-                document.getElementById("heroBoton").innerHTML =
-                    "Conocer Proyecto";
-
-                document.getElementById("tituloProyecto").innerHTML =
-                    "¿Qué es PostureLab?";
-
-                document.getElementById("textoProyecto").innerHTML =
-                    "PostureLab es una plataforma que analiza la postura de una persona utilizando visión por computadora e Inteligencia Artificial. El sistema detecta malas posturas, entrega recomendaciones ergonómicas y almacena el historial de evaluaciones para ayudar a mejorar los hábitos posturales.";
-
-            }
-
-        });
-
-    </script>
+    <script src="static/js/traductor.js"></script>
 </body>
 
 </html>
