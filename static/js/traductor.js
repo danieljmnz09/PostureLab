@@ -1,4 +1,3 @@
-
 let idioma = "es";
 
 const btn = document.getElementById("btnIdioma");
@@ -10,53 +9,73 @@ btn.addEventListener("click", () => {
         idioma = "en";
         btn.innerHTML = "🇪🇸 Español";
 
-        // HERO
-        document.getElementById("heroTitulo").textContent = "PostureLab";
+        // NAVBAR
+        document.getElementById("navProyecto").textContent = "Project";
 
-        document.getElementById("heroTexto").textContent =
-            "An intelligent platform that uses Artificial Intelligence to evaluate a person's posture in real time and provide ergonomic recommendations.";
+        document.getElementById("navFuncionamiento").textContent = "How it Works";
 
-        document.getElementById("heroBoton").textContent =
-            "Learn More";
+        document.getElementById("navTecnologias").textContent = "Technologies";
 
-        // PROYECTO
-        document.getElementById("tituloProyecto").textContent =
-            "What is PostureLab?";
+        document.getElementById("navBeneficios").textContent = "Benefits";
 
-        document.getElementById("textoProyecto").textContent =
-            "PostureLab is an intelligent platform that analyzes a person's posture using computer vision and Artificial Intelligence. The system detects poor posture, provides ergonomic recommendations and stores the user's evaluation history.";
+        // ================= HERO =================
 
-        // TÍTULOS
-        document.getElementById("tituloProblema").textContent =
-            "Problem";
+        heroTitulo.textContent = "PostureLab";
 
-        document.getElementById("tituloFuncionamiento").textContent =
-            "How does it work?";
+        heroTexto.textContent =
+            "An intelligent platform that uses Artificial Intelligence to evaluate posture in real time and provide ergonomic recommendations.";
 
-        document.getElementById("tituloTecnologias").textContent =
-            "Technologies Used";
+        heroBoton.textContent = "Learn More";
 
-        document.getElementById("tituloBeneficios").textContent =
-            "Benefits";
+        // ================= PROYECTO =================
 
-        // TARJETAS DEL PROBLEMA
-        document.getElementById("problema1Titulo").textContent =
-            "Long working hours";
+        tituloProyecto.textContent = "What is PostureLab?";
 
-        document.getElementById("problema1Texto").textContent =
+        textoProyecto.textContent =
+            "PostureLab is an intelligent platform that analyzes posture using computer vision and Artificial Intelligence. It detects poor posture, provides ergonomic recommendations and stores the user's evaluation history.";
+
+        // ================= PROBLEMA =================
+
+        tituloProblema.textContent = "Problem";
+
+        problema1Titulo.textContent = "Long working hours";
+        problema1Texto.textContent =
             "Many people spend more than 8 hours in front of a computer.";
 
-        document.getElementById("problema2Titulo").textContent =
-            "Poor posture habits";
-
-        document.getElementById("problema2Texto").textContent =
+        problema2Titulo.textContent = "Poor posture habits";
+        problema2Texto.textContent =
             "Poor posture can cause back, neck and shoulder pain.";
 
-        document.getElementById("problema3Titulo").textContent =
-            "Prevention";
-
-        document.getElementById("problema3Texto").textContent =
+        problema3Titulo.textContent = "Prevention";
+        problema3Texto.textContent =
             "Detecting poor posture early helps prevent musculoskeletal injuries.";
+
+        // ================= FUNCIONAMIENTO =================
+
+        tituloFuncionamiento.textContent = "How does it work?";
+
+        funcionDescripcion.textContent =
+            "The PostureLab process is divided into five main stages.";
+
+        funcion1Titulo.textContent = "1. Capture";
+        funcion1Texto.textContent =
+            "The camera captures the user's posture in real time.";
+
+        funcion2Titulo.textContent = "2. Detection";
+        funcion2Texto.textContent =
+            "MediaPipe identifies shoulders, neck and back using computer vision.";
+
+        funcion3Titulo.textContent = "3. Analysis";
+        funcion3Texto.textContent =
+            "Body angles are calculated to evaluate posture.";
+
+        funcion4Titulo.textContent = "4. Evaluation";
+        funcion4Texto.textContent =
+            "The system classifies posture using a traffic-light indicator.";
+
+        funcion5Titulo.textContent = "5. History";
+        funcion5Texto.textContent =
+            "Evaluations are stored so users can monitor their progress.";
 
     }
 
@@ -64,54 +83,73 @@ btn.addEventListener("click", () => {
 
         idioma = "es";
         btn.innerHTML = "🇺🇸 English";
+        // NAVBAR
+        document.getElementById("navProyecto").textContent = "Proyecto";
 
-        // HERO
-        document.getElementById("heroTitulo").textContent = "PostureLab";
+        document.getElementById("navFuncionamiento").textContent = "Funcionamiento";
 
-        document.getElementById("heroTexto").textContent =
+        document.getElementById("navTecnologias").textContent = "Tecnologías";
+
+        document.getElementById("navBeneficios").textContent = "Beneficios";
+
+        // ================= HERO =================
+
+        heroTitulo.textContent = "PostureLab";
+
+        heroTexto.textContent =
             "Plataforma inteligente que utiliza Inteligencia Artificial para evaluar la postura de una persona en tiempo real y entregar recomendaciones ergonómicas.";
 
-        document.getElementById("heroBoton").textContent =
-            "Conocer Proyecto";
+        heroBoton.textContent = "Conocer Proyecto";
 
-        // PROYECTO
-        document.getElementById("tituloProyecto").textContent =
-            "¿Qué es PostureLab?";
+        // ================= PROYECTO =================
 
-        document.getElementById("textoProyecto").textContent =
-            "PostureLab es una plataforma que analiza la postura de una persona utilizando visión por computadora e Inteligencia Artificial. El sistema detecta malas posturas, entrega recomendaciones ergonómicas y almacena el historial de evaluaciones para ayudar a mejorar los hábitos posturales.";
+        tituloProyecto.textContent = "¿Qué es PostureLab?";
 
-        // TÍTULOS
-        document.getElementById("tituloProblema").textContent =
-            "Problema";
+        textoProyecto.textContent =
+            "PostureLab es una plataforma que analiza la postura de una persona utilizando visión por computadora e Inteligencia Artificial. El sistema detecta malas posturas, entrega recomendaciones ergonómicas y almacena el historial de evaluaciones.";
 
-        document.getElementById("tituloFuncionamiento").textContent =
-            "¿Cómo funciona?";
+        // ================= PROBLEMA =================
 
-        document.getElementById("tituloTecnologias").textContent =
-            "Tecnologías Utilizadas";
+        tituloProblema.textContent = "Problema";
 
-        document.getElementById("tituloBeneficios").textContent =
-            "Beneficios";
-
-        // TARJETAS DEL PROBLEMA
-        document.getElementById("problema1Titulo").textContent =
-            "Largas jornadas";
-
-        document.getElementById("problema1Texto").textContent =
+        problema1Titulo.textContent = "Largas jornadas";
+        problema1Texto.textContent =
             "Muchas personas permanecen más de 8 horas frente al computador.";
 
-        document.getElementById("problema2Titulo").textContent =
-            "Malos hábitos";
-
-        document.getElementById("problema2Texto").textContent =
+        problema2Titulo.textContent = "Malos hábitos";
+        problema2Texto.textContent =
             "Una postura incorrecta puede provocar dolores de espalda, cuello y hombros.";
 
-        document.getElementById("problema3Titulo").textContent =
-            "Prevención";
-
-        document.getElementById("problema3Texto").textContent =
+        problema3Titulo.textContent = "Prevención";
+        problema3Texto.textContent =
             "Detectar malas posturas a tiempo ayuda a prevenir lesiones musculoesqueléticas.";
+
+        // ================= FUNCIONAMIENTO =================
+
+        tituloFuncionamiento.textContent = "¿Cómo funciona?";
+
+        funcionDescripcion.textContent =
+            "El proceso de PostureLab se divide en cinco etapas principales.";
+
+        funcion1Titulo.textContent = "1. Captura";
+        funcion1Texto.textContent =
+            "La cámara registra la postura del usuario en tiempo real.";
+
+        funcion2Titulo.textContent = "2. Detección";
+        funcion2Texto.textContent =
+            "MediaPipe identifica hombros, cuello y espalda mediante visión artificial.";
+
+        funcion3Titulo.textContent = "3. Análisis";
+        funcion3Texto.textContent =
+            "Se calculan los ángulos corporales para evaluar la postura.";
+
+        funcion4Titulo.textContent = "4. Evaluación";
+        funcion4Texto.textContent =
+            "El sistema clasifica la postura utilizando un semáforo ergonómico.";
+
+        funcion5Titulo.textContent = "5. Historial";
+        funcion5Texto.textContent =
+            "Se almacenan las evaluaciones para observar la evolución del usuario.";
 
     }
 
